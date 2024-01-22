@@ -154,13 +154,14 @@ li {
     font-weight: bold;
     color: #407899;
 }
+
+@media (min-width: 768px) {
+/* on mobile we use active */
 .in-text-jump:hover {
     cursor: pointer;
     color: #FF784F;
 }
-
-@media (min-width: 768px) {
-
+    
 .primary {
     margin-left: 2rem;
 }
@@ -441,6 +442,9 @@ header ul li:hover {
     .drop-down-menu .drop-down-link-container li:hover {
         cursor: pointer;
     }
+    .drop-down-menu .drop-down-link-container li:active {
+        color: #FF784F;
+    }
 
     .drop-down-link-title {
         grid-row: 1/2;
@@ -481,6 +485,10 @@ header ul li:hover {
         display: flex;
         justify-self: right;
         align-items: start;
+    }
+
+    .in-text-jump:active {
+        color:#FF784F;
     }
 
     /* end mobile drop down */
