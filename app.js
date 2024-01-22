@@ -3,8 +3,10 @@ const jumpToClass = (className)=> {
   console.dir(target)
   const dropDownMenu = document.querySelector('.drop-down-menu')
   const dropDownDisplay = window.getComputedStyle(dropDownMenu).getPropertyValue('display');
-  // Toggle the display style
-  dropDownMenu.style.display = (dropDownDisplay === 'none') ? 'grid' : 'none';
+
+  //turn off the drop down menu
+  //changed this from a toggle as if any link is clicked the drop down menu should be off (mobile of desktop)
+  dropDownMenu.style.display = 'none';
   
   if(target) {
     const targetPos = target.getBoundingClientRect().top + window.scrollY - 60

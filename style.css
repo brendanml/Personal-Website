@@ -390,10 +390,11 @@ header ul li:hover {
         top: 0;
         left: 0;
         font-size: 1.3rem;
+        border-bottom: 2px solid #E2F0FB;
     }
 
     .drop-down-duck {
-        width: 8rem;
+        width: 4rem;
         justify-self: right;
         padding: 0;
         margin-left: .3rem;
@@ -415,6 +416,7 @@ header ul li:hover {
     .drop-down-link-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2.5rem;
     }
 
     .drop-down-menu ul li {
@@ -425,9 +427,10 @@ header ul li:hover {
 
     .drop-down-link-container h4{
         padding: 0;
-        margin: 0;
-        margin-left: 1rem;
-        margin-top: .5rem;
+        padding-bottom: .1rem;
+        margin: .5rem .2rem 0 .2rem;
+        justify-self: center;
+        border-bottom: .1rem solid#9cb4d8;
     }
 
     .drop-down-menu .drop-down-link-container li:hover {
