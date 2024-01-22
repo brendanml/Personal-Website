@@ -434,7 +434,6 @@ header ul li:hover {
     }
 
     .drop-down-menu .drop-down-link-container li:hover {
-        color: #FF784F;
         cursor: pointer;
     }
 
@@ -457,9 +456,8 @@ header ul li:hover {
 
     .drop-down-links {
         grid-column: 1/2;
-        margin-top: .3rem;
-        grid-row: 2/span;
-        margin-left: 1rem;
+        grid-row: 2/span;  
+        justify-self: center;
     }
 
     .drop-down-jumps {
