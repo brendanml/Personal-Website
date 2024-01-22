@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brendanml</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="side-bar">
+        <div class="side-bar-top">
+            <img class="duck" src="./assets/duck.png" alt="">
+            <ul>
+                <a href="./assets/resume.pdf"><li>resume</li></a>
+                <a href="https://github.com/brenclen"><li>github</li></a>
+                <a href="https://www.linkedin.com/in/brendanml/"><li>linkedin</li></a>
+            </ul>
+        </div>
+        <div class="now-on-mobile">check out mobile view!</div>
+        <div class="side-bar-bottom">
+            <ul>
+                <li>contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-header">
+        <img class="duck-head" src="./assets/duck-head.png" alt="">
+        <div class="hamburger">
+            <img src="./assets/burger.svg" alt="">
+        </div>
+        <div class="drop-down-menu">
+            <img src="./assets/duck.png" class="drop-down-duck" alt="">
+            <div class="drop-down-link-container">
+                <h4 class="drop-down-link-title">external links</h4>
+                <ul class="drop-down-links">
+                    <a href="./resume.pdf"><li>resume</li></a>
+                    <a href="https://github.com/brenclen"><li>github</li></a>
+                    <a href="https://www.linkedin.com/in/brendanml/"><li>linkedin</li></a>
+                </ul>
+                <h4 class="drop-down-jump-title">page jumps</h4>
+                <ul class="drop-down-jumps">
+                    <li class="projects-btn">projects</li>
+                    <li class="certifications-btn">certifications</li>
+                    <li class="story-btn">story</li>
+                    <li class="hobbies-btn">hobbies</li>
+                    <li class="contact-btn">contact</li>
+                </ul>
+            </div>
+            <div class="exit-container">
+                <img src="./assets/x.svg" alt="" class="drop-down-exit">
+            </div>
+        </div>
+    </div>
+    <div class="primary">
+        <header>
+            <ul>
+                <li class="projects-btn">projects</li>
+                <li class="certifications-btn">certifications</li>
+                <li class="story-btn">story</li>
+                <li class="hobbies-btn">hobbies</li>
+            </ul>
+        </header>
+        <main>
+            <div class="content-section introduction">
+                <h1>Hi! I'm Brendan :)</h1>
+                <p>I am a 3rd year Computer Science student studying at the University of Victoria.</p>
+                <p>I love building <span class="web-apps in-text-jump">web apps</span> but I've also been having a lot of fun <span class="in-text-jump">building games</span> on the side!</p>
+                <p>My favourite languages are <span class="in-text-jump">JavaScript</span> and <span class="in-text-jump">C++</span>, but vanilla HTML & CSS will always have my heart.</p>
+                <p>However; I've been really enjoying learning <span class="in-text-jump">React</span>! I really enjoy how it brings an object-oriented nature to web dev.</p>
+                <img src="./assets/ski-text.png"  alt="">
+            </div>
+            <div class="content-section projects">
+                <h1>projects</h1>
+                <div class="content-subsection farm-time">
+                    <h2>Farm Time</h2>
+                    <p>Farm time is a topdown 2D farming game built with the the <a class="in-text-jump" href="https://www.raylib.com/index.html">raylib</a> graphics/multimedia library.</p>
+                    <p></p>
+                    <img src="./assets/f-t-5.gif" alt="Animated GIF">
+                </div>
+                <div class="content-subsection campies">
+                    <h2>Campies</h2>
+                    <p>Campies is a full CRUD campsite review web app. </p>
+                    <img src="./assets/campies-pic.png" alt="">
+                </div>
+            </div>
+            <div class="content-section certifications">
+                <h1>certifications</h1>
+                <div class="certifications-courses">
+                    <div class="fso">
+                        <h4>Full Stack Open</h4>
+                        <p>done through the university of helsinki</p>
+                        <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
+                    </div>
+                    <div class="wdbc">
+                        <h4>web developer bootcamp</h4>
+                        <p>online udemy course</p>
+                        <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section story">
+                <h1>story</h1>
+                <p>After dropping out of...</p>
+            </div>
+            <div class="content-section hobbies">
+                <h1>hobbies</h1>
+                <div class="hobbies-content">
+                    <img class="hobbies-img" src="./assets/hobbies-2.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odit soluta! Esse voluptatibus iure qui, provident facere illo sequi in placeat voluptates sunt modi impedit alias quasi sint. Doloremque, debitis!</p>
+                </div>
+            </div>
+            <div class="content-section contact">
+                <h1>Contact Info</h1>
+                <p>email: directbrendan@gmail.com</p>
+                <p>phone: 250-701-5417</p>
+            </div>
+            <div id="jump-to-top" class="jump-to-top">
+                <img src="./assets/arrow-up.svg" alt="">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
