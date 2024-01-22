@@ -1,7 +1,12 @@
-@font-face {
+/* @font-face {
     font-family: 'Red Hat Display';
     src: url('./fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap');
+
+
 @font-face {
     font-family: 'gloria';
     src: url('./fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf') format('truetype');
@@ -50,7 +55,7 @@ li {
 
 .content-section h1 {
     color: #2C3D55;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 2rem;
     border-bottom: 3px solid #eff8ff;
     padding-bottom: 5px;
@@ -183,10 +188,10 @@ li {
 
 .side-bar li {
     padding: .2rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 .side-bar ul li:hover {
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
     color: #FF784F;
 }
@@ -214,11 +219,11 @@ header ul li{
     padding-left: 1rem;
     padding-right: 1rem;
     height: 5rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 header ul li:hover {
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
     color: #FF784F;
 }
@@ -420,7 +425,7 @@ header ul li:hover {
     }
 
     .drop-down-menu ul li {
-        font-weight: 600;
+        font-weight: bold;
         color: black;
         margin-top: 0;
     }
