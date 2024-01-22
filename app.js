@@ -37,10 +37,17 @@ const addNavLinks = ()=> {
     jumpToClass('certifications')
   }))
 
+  const contact = document.querySelectorAll('.contact-btn')
+  const contactArr = Array.from(contact)
+  contactArr.map(btn => btn.addEventListener('click', ()=> {
+    jumpToClass('contact')
+  }))
+
   const webApps = document.querySelector('.web-apps');
   webApps.addEventListener('click', ()=> {
     jumpToClass('campies')
   })
+
 }
 
 const hamburger = document.querySelector('.hamburger')
