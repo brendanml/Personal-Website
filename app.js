@@ -2,8 +2,7 @@ const jumpToClass = (className)=> {
   const target = document.querySelector(`.${className}`)
   console.dir(target)
   const dropDownMenu = document.querySelector('.drop-down-menu')
-  const dropDownDisplay = window.getComputedStyle(dropDownMenu).getPropertyValue('display');
-
+  
   //turn off the drop down menu
   //changed this from a toggle as if any link is clicked the drop down menu should be off (mobile of desktop)
   dropDownMenu.style.display = 'none';
@@ -45,9 +44,15 @@ const addNavLinks = ()=> {
     jumpToClass('contact')
   }))
 
+  //in text jumps
+
   const webApps = document.querySelector('.web-apps');
   webApps.addEventListener('click', ()=> {
     jumpToClass('campies')
+  })
+  const buildingGames = document.querySelector('.building-games');
+  buildingGames.addEventListener('click', ()=> {
+    jumpToClass('farm-time')
   })
 
 }
