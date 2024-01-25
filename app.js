@@ -6,6 +6,8 @@ const jumpToClass = (className)=> {
   //turn off the drop down menu
   //changed this from a toggle as if any link is clicked the drop down menu should be off (mobile of desktop)
   dropDownMenu.style.display = 'none';
+
+  addFocusEffect(className)
   
   if(target) {
     const targetPos = target.getBoundingClientRect().top + window.scrollY - 60
@@ -26,10 +28,10 @@ const addNavLinks = ()=> {
     jumpToClass('story')
   }))
 
-  const hobbies = document.querySelectorAll('.hobbies-btn')
-  const hobbiesArr = Array.from(hobbies)
-  hobbiesArr.map(btn => btn.addEventListener('click', ()=> {
-    jumpToClass('hobbies')
+  const extrac = document.querySelectorAll('.extrac-btn')
+  const extracArr = Array.from(extrac)
+  extracArr.map(btn => btn.addEventListener('click', ()=> {
+    jumpToClass('extrac')
   }))
 
   const certifications = document.querySelectorAll('.certifications-btn')
@@ -62,6 +64,17 @@ const addNavLinks = ()=> {
 
 
 }
+
+function addFocusEffect(className) {
+  var element = document.querySelector(`.${className}`);
+  element.classList.add("focus-effect");
+
+  // Remove the focus effect after a short delay (e.g., 300 milliseconds)
+  setTimeout(function() {
+    element.classList.remove("focus-effect");
+  }, 800);
+}
+
 
 const hamburger = document.querySelector('.hamburger')
 hamburger.addEventListener('click', ()=> {

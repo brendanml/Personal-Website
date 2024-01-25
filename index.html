@@ -39,22 +39,16 @@
         </div>
         <div class="drop-down-menu">
             <img src="./assets/duck.png" class="drop-down-duck" alt="">
-            <div class="drop-down-link-container">
-                <h4 class="drop-down-link-title">ext. links</h4>
                 <ul class="drop-down-links">
+                    <li class="projects-btn">projects</li>
+                    <li class="certifications-btn">certifications</li>
+                    <li class="story-btn">story</li>
+                    <li class="extrac-btn">extracurriculars</li>
+                    <li class="contact-btn">contact</li>
                     <a href="./resume.html"><li>resume</li></a>
                     <a href="https://github.com/brendanml"><li>github</li></a>
                     <a href="https://www.linkedin.com/in/brendanml/"><li>linkedin</li></a>
                 </ul>
-                <h4 class="drop-down-jump-title">page jumps</h4>
-                <ul class="drop-down-jumps">
-                    <li class="projects-btn">projects</li>
-                    <li class="certifications-btn">certifications</li>
-                    <li class="story-btn">story</li>
-                    <li class="hobbies-btn">hobbies</li>
-                    <li class="contact-btn">contact</li>
-                </ul>
-            </div>
             <div class="exit-container">
                 <img src="./assets/x.svg" alt="" class="drop-down-exit">
             </div>
@@ -66,7 +60,7 @@
                 <li class="projects-btn">projects</li>
                 <li class="certifications-btn">certifications</li>
                 <li class="story-btn">story</li>
-                <li class="hobbies-btn">hobbies</li>
+                <li class="extrac-btn">extracurriculars</li>
             </ul>
         </header>
         <main>
@@ -82,19 +76,17 @@
                 <h1>projects</h1>
                 <div class="proj-content">
                     <div class="project-card farm-time">
-                        <h2>Farm Time</h2>
+                        <a href="https://github.com/brendanml/Farm-Time"><h2>Farm Time</h2></a>
                         <p>Farm time is a topdown 2D farming game built with the the <a class="in-text-jump" href="https://www.raylib.com/index.html">raylib</a> graphics/multimedia library written it in C/C++.</p>
                         <p>Features: Player terrain navigation, harvestable resources, and customizable terrain generation.</p>
-                        <p>It is currently still in develoment, but feel free to check out the <a href="https://github.com/brendanml/Farm-Time" class="in-text-jump">github repo</a>!</p>
+                        <p>It is currently still in develoment, but feel free to check out the <a href="https://github.com/brendanml/Farm-Time" class="in-text-jump">github repository</a>!</p>
                         <img src="./assets/f-t-5.gif" alt="Animated GIF">
-                        <!-- <div class="technologies">
-                            <p class="tech-block">C++</p>
-                        </div> -->
                     </div>
                     <div class="project-card campies">
-                        <h2>Campies</h2>
+                        <a href="https://github.com/brendanml/Campies"><h2>Campies</h2></a>
                         <p>Campies is a website review application where users can post and review campsites.</p>
                         <p>Client data (login credentials, campsite/review info) is fed to <b>Express</b> routes which is then encrypted and stored using <b>MongoDB</b>.</p>
+                        <p>It isn' currently live, but feel free to check it out <a class="in-text-jump" href="https://github.com/brendanml/Campies">here</a>!</p>
                         <img src="./assets/campies-pic.png" alt="">
                     </div>
                 </div>
@@ -105,14 +97,35 @@
                         <div class="cert-card fso">
                             <img src="./assets/helsinki.png" alt="" class="cert-img">
                             <h4>Full Stack Open</h4>
-                            <p>done through the university of helsinki</p>
-                            <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
+                            <p>Full stack course held at the Department of Computer Science at the University of Helsinki (free online version).</p>
+                            <p>13 part web development course covering modern JavaScript-based single page applications with <b>ReactJS</b> that use <b>REST</b> APIs.</p>
+                            <div class="technologies">
+                                <p class="tech-block">ReactJS</p>
+                                <p class="tech-block">Redux</p>
+                                <p class="tech-block">Node.js</p>
+                                <p class="tech-block">MongoDB</p>
+                                <p class="tech-block">GraphQL</p>
+                                <p class="tech-block">TypeScript</p>
+                            </div>
                         </div>
                         <div class="cert-card">
                             <img src="./assets/udemy.png" alt="" class="cert-img">
-                            <h4>web developer bootcamp</h4>
-                            <p>online udemy course</p>
-                            <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
+                            <h4>Web Developer Bootcamp</h4>
+                            <p>Udemy's most popular web development course.</p>
+                            <p>The course that got me started programming; Covering the very basics of HTML, CSS, and JS, and eventually added Express routes and MongoDB to round out our full stack application.</p>
+                            <div class="technologies">
+                                <p class="tech-block">HTML5</p>
+                                <p class="tech-block">CSS3</p>
+                                <p class="tech-block">ES6</p>
+                                <p class="tech-block">AJAX</p>
+                                <p class="tech-block">ReactJS</p>
+                                <p class="tech-block">NodeJS</p>
+                                <p class="tech-block">ExpressJS</p>
+                                <p class="tech-block">REST</p>
+                                <p class="tech-block">SQL</p>
+                                <p class="tech-block">MongoDB</p>
+                                <p class="tech-block">Authentication</p>
+                            </div>
                         </div>
                 </div>
             </div>
@@ -122,22 +135,23 @@
                 <p>For a while I spent my days working as a letter carrier for Canada Post, but one day I followed up on a long time dream: "<b>learning to code</b>".</p>
                 <p>After following a few beginner tutorials, I got my footing and started rushing through my shifts so I could keep pursuing my new passion.</p> 
                 <p>Even though I loved my job, I just couldn't shake the idea of pursuing a career as a full-time software developer.</p>
-                <p>I transitioned to workinging part-time and re-enrolled in school. I hoped I would one day graduate from the University of Victoria with a Bachelors in Computer Science.</p>
-                <p>I have now targeting <b>graduation</b> in <b>May of 2025</b>!</p>
+                <p>I transitioned to working part-time and re-enrolled in school. I hoped I would one day graduate from the University of Victoria with a Bachelors in Computer Science.</p>
+                <p>I will be a new <b>graduate</b> in <b>May of 2025</b>!</p>
             </div>
-            <div class="content-section hobbies">
-                <h1>hobbies</h1>
-                <div class="hobbies-content">
-                    <img class="hobbies-img" src="./assets/hobbies-2.png" alt="">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odit soluta! Esse voluptatibus iure qui, provident facere illo sequi in placeat voluptates sunt modi impedit alias quasi sint. Doloremque, debitis!</p>
+            <div class="content-section extrac">
+                <h1>extracurriculars</h1>
+                <div class="extrac-content">
+                    <img class="extrac-img" src="./assets/hobbies-2.png" alt="">
+                    <p>I get up to a lot when I'm not coding!</p>
+                    <p>Most of all I love <b>woodwork</b>, but moving into an apartment has limited that too whenever I visit my parents. I recently picked up <b>sewing</b> and <b>ceramics</b>, I've been having such a blast.</p>
+                    <p>I was just getting into learning how to play <b>piano</b> over last summer when I broke my arm <b>biking</b>; so naturally, I got into <b>videography</b>.</p>
+                    <p>It didn't take my long to get back on the bike though... I still ride almost everywhere, Victoria is too beautiful to be in a car.</p>
+                    <p>I'm also a part of the uvic <b>squash</b> club and have just gotten into <b>volunteering</b> with <b>Rotaract</b>.</p>
                 </div>
             </div>
-            <!-- <div class="content-section contact">
-                <h1>Contact Info</h1>
-                <p>email: directbrendan@gmail.com</p>
-                <p>phone: 250-701-5417</p>
-                <button onclick="openMailApp()"> email</button>
-            </div> -->
+            <div class="copyright">
+                <p><b>© 2024 Brendan Lynch</b></p>
+            </div>
             <div id="jump-to-top" class="jump-to-top">
                 <img src="./assets/arrow-up.svg" alt="">
             </div>

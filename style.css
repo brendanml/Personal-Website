@@ -26,6 +26,10 @@
     }
   }
 
+  .focus-effect {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
 div {
     margin: 0;
     padding: 0;
@@ -66,6 +70,7 @@ li {
     background-color: white;
     padding: 1rem;
     margin: 2rem;
+    transition: box-shadow 0.3s ease-in-out;
 }
 .content-section h1 {
     color: #2C3D55;
@@ -80,10 +85,11 @@ li {
     margin-top: 0;
 }
 
+
 .proj-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 
@@ -107,6 +113,7 @@ li {
     z-index: 50;
     box-shadow: 0 0 1rem .5rem aliceblue;
     transition: all .2s ease;
+    align-items: center;
 }
 
 .project-card:hover {
@@ -117,9 +124,11 @@ li {
 .project-card p {
     grid-column: 1/2;
     margin: .5rem 0;
+    padding: 0 .2rem 0 .2rem;
 }   
 .project-card h2 {
     grid-column: 1/2;
+    padding: 0 .2rem 0 .2rem;
     margin: 0 .5rem;
 }   
 
@@ -134,36 +143,107 @@ li {
 
 /* project cards end */
 
+/* certifications start */
+
+.cert-content {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cert-card {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin: 1rem;
+    padding: 1rem;
+    z-index: 50;
+    box-shadow: 0 0 1rem .5rem aliceblue;
+    transition: all .2s ease;
+}
+
+.cert-card:hover {
+    box-shadow: 0 0 1rem 1rem aliceblue;
+    transform: translate(-5px, -5px);
+}
+
+.cert-card {
+    z-index: 1;
+    position: relative;
+}
+
+.cert-card p {
+    position: relative;
+}
+.cert-card h4 {
+    position: relative;
+}
+
+.cert-img {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    opacity: .08;
+}
+
+/* certifications end */
+
 
 
 /* technologies start */
 
 .technologies {
-    background-color:#9cb4d8 ;
-    width: 100%;
-    height: 100px;
     padding: .5rem;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 .tech-block {
-    margin: 0;
-    display: inline-block;
+    font-size: bold;
+    margin: .25rem;
     border-radius: 3px;
-    padding: 0 .2rem 0 .2rem;
+    padding: 0 .3rem 0 .3rem;
     color: white;
-    background-color: #2C3D55;
+    background-color: rgb(55, 84, 110);
+    box-shadow: 0 0 1rem .05rem aliceblue;
 }
 
 /* technologies end */
 
+/* extrac content */
 
-.hobbies-content {
+.extrac-content {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 1rem;
 }
-.hobbies img{
-    width: 600px;
+
+.extrac-content p {
+    grid-column: 1/2;
+    margin: .5 1rem;
 }
+
+.extrac img{
+    width: 400px;
+    grid-column: 2/3;
+    grid-row: 1/6;
+    justify-self: center;
+}
+
+/* extrac end */
 
 /* jump to top button start */
 
@@ -178,6 +258,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 1rem .2rem rgb(185, 203, 219);
 }
 .jump-to-top:hover {
     cursor: pointer;
@@ -198,6 +280,12 @@ li {
 .in-text-jump:hover {
     cursor: pointer;
     color: #FF784F;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 /* jump to top button end */
 
@@ -308,62 +396,10 @@ header ul li:hover {
 .introduction img {
     grid-column: 2/3;
     grid-row: 1/ 6;
-    width: 400px;
+    max-width: 400px;
     align-self: center;
     justify-self: center;
 }
-
-/* certifications start */
-
-.cert-content {
-    flex-direction: row;
-    display: flex;
-}
-
-.cert-card {
-    background-color: white;
-    text-align: center;
-    margin: 0;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 3px;
-    margin: 1rem;
-    padding: 1rem;
-    z-index: 50;
-    box-shadow: 0 0 1rem .5rem aliceblue;
-    transition: all .2s ease;
-}
-
-.cert-card:hover {
-    box-shadow: 0 0 1rem 1rem aliceblue;
-    transform: translate(-5px, -5px);
-}
-
-.cert-card {
-    z-index: 1;
-    position: relative;
-}
-
-.cert-card p {
-    position: relative;
-}
-.cert-card h4 {
-    position: relative;
-}
-
-.cert-img {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400;
-    height: 100%;
-    opacity: .08;
-}
-
-/* certifications end */
 
 
 .story {
@@ -414,6 +450,31 @@ header ul li:hover {
 }
 
 }
+
+/* intermediate view start */
+
+@media (max-width: 900px) {
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction img {
+        margin-top: 10px;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cert-card {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* mobile view */
 @media (max-width: 768px) {
 
@@ -434,6 +495,14 @@ header ul li:hover {
     .project-card {
         flex-direction: column;
         display: flex;
+        box-shadow: 0 0 1rem 5px aliceblue;
+    }
+
+    .cert-card {
+        flex-direction: column;
+        display: flex;
+        width: 90%;
+        box-shadow: 0 0 1rem 5px aliceblue;
     }
 
 
@@ -448,12 +517,18 @@ header ul li:hover {
         display: flex;
     }
 
+    .extrac-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     
     .content-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 0 1rem .2rem;
+        padding: 1rem 0 1rem .2rem;
         margin: .5rem .2rem .5rem .2rem;
     }
 
@@ -481,6 +556,7 @@ header ul li:hover {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 100;
     }
 
     .duck-head {
@@ -491,8 +567,9 @@ header ul li:hover {
     }
 
     .hamburger {
-        justify-self: right;
-        margin: .75rem .4rem 0 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 
     .hamburger:hover {
@@ -509,56 +586,52 @@ header ul li:hover {
 
     .drop-down-menu {
         display: none;
-        grid-template-columns: 1fr 5fr 1fr;
+        text-align: center;
         background-color: aliceblue;
         position: fixed;
         width: 100vw;
-        height: 12rem;
+        height: 22rem;
         top: 0;
         left: 0;
-        font-size: 1.3rem;
+        font-size: 2rem;
         border-bottom: 2px solid #E2F0FB;
+        z-index: 100;
     }
 
     .drop-down-duck {
-        width: 4rem;
         justify-self: right;
         padding: 0;
         margin-left: .3rem;
         margin-top: .75rem;
         margin-right: .5rem;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -50%);
+        max-width: 90%;
+        max-height: 90%;
+        opacity: .05;
     }
     .drop-down-menu .drop-down-exit {
         width: 2rem;
-        justify-self: right;
+        position: absolute;
         padding: 0;
-        margin-top: .75rem;
-        margin-right: .5rem;
+        top: 12px;
+        right: 12px;
     }
 
     .drop-down-menu img:hover {
         cursor: pointer;
     }
 
-    .drop-down-link-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2.5rem;
-    }
-
     .drop-down-menu ul li {
         font-weight: bold;
-        color: black;
         margin-top: 0;
+        color: black;
     }
 
-    .drop-down-link-container h4{
-        padding: 0;
-        padding-bottom: .1rem;
-        margin: .5rem .2rem 0 .2rem;
-        justify-self: center;
-        border-bottom: .1rem solid#9cb4d8;
-    }
+
 
     .drop-down-menu .drop-down-link-container li:hover {
         cursor: pointer;
@@ -575,23 +648,10 @@ header ul li:hover {
         margin-left: 1rem;
         margin-top: .5rem;
     }
-    .drop-down-jump-title {
-        grid-row: 1/2;
-        grid-column: 2/3;
-        padding: 0;
-        margin: 0;
-        margin-top: .5rem;
-    }
 
     .drop-down-links {
         grid-column: 1/2;
         grid-row: 2/span;  
-        justify-self: center;
-    }
-
-    .drop-down-jumps {
-        grid-column: 2/3;
-        grid-row: 2/span;
         justify-self: center;
     }
 
