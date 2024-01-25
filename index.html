@@ -22,10 +22,13 @@
                 <a href="https://www.linkedin.com/in/brendanml/"><li>linkedin</li></a>
             </ul>
         </div>
-        <div class="now-on-mobile">check out mobile view!</div>
         <div class="side-bar-bottom">
+            <div class="get-in-touch">
+                <p>get in touch!</p>
+                <img src="./assets/arrow.png" alt="">
+            </div>
             <ul>
-                <li class="contact-btn">contact</li>
+                <li onclick="openMailApp()" class="contact-btn">contact</li>
             </ul>
         </div>
     </div>
@@ -70,43 +73,57 @@
             <div class="content-section introduction">
                 <h1>Hi! I'm Brendan :)</h1>
                 <p>I am a 3rd year Computer Science student studying at the University of Victoria.</p>
-                <p>I love building <span class="web-apps in-text-jump">web apps</span> but I've also been having a lot of fun <span class="building-games in-text-jump">building games</span> on the side!</p>
-                <p>My favourite languages are <span class="in-text-jump">JavaScript</span> and <span class="in-text-jump">C++</span>, but vanilla HTML & CSS will always have my heart.</p>
-                <p>However; I've been really enjoying learning <span class="in-text-jump">React</span>! It has really made me appreciate how re-usability of functions/components in any language can improve my efficiency</p>
+                <p>I love building <b class="web-apps">web apps</b> but I've also been having a lot of fun <b>building games</b> on the side!</p>
+                <p>My favourite languages are <span class="in-text-jump js">JavaScript</span> and <span class="in-text-jump cpp">C++</span>, but vanilla HTML & CSS will always have my heart.</p>
+                <p>However; I've been really enjoying learning <span class="in-text-jump react">React</span>! It has really made me appreciate how re-usability of functions/components in any language can improve my efficiency</p>
                 <img src="./assets/ski-text.png"  alt="">
             </div>
             <div class="content-section projects">
                 <h1>projects</h1>
-                <div class="content-subsection farm-time">
-                    <h2>Farm Time</h2>
-                    <p>Farm time is a topdown 2D farming game built with the the <a class="in-text-jump" href="https://www.raylib.com/index.html">raylib</a> graphics/multimedia library.</p>
-                    <p></p>
-                    <img src="./assets/f-t-5.gif" alt="Animated GIF">
-                </div>
-                <div class="content-subsection campies">
-                    <h2>Campies</h2>
-                    <p>Campies is a full CRUD campsite review web app. </p>
-                    <img src="./assets/campies-pic.png" alt="">
+                <div class="proj-content">
+                    <div class="project-card farm-time">
+                        <h2>Farm Time</h2>
+                        <p>Farm time is a topdown 2D farming game built with the the <a class="in-text-jump" href="https://www.raylib.com/index.html">raylib</a> graphics/multimedia library written it in C/C++.</p>
+                        <p>Features: Player terrain navigation, harvestable resources, and customizable terrain generation.</p>
+                        <p>It is currently still in develoment, but feel free to check out the <a href="https://github.com/brendanml/Farm-Time" class="in-text-jump">github repo</a>!</p>
+                        <img src="./assets/f-t-5.gif" alt="Animated GIF">
+                        <!-- <div class="technologies">
+                            <p class="tech-block">C++</p>
+                        </div> -->
+                    </div>
+                    <div class="project-card campies">
+                        <h2>Campies</h2>
+                        <p>Campies is a website review application where users can post and review campsites.</p>
+                        <p>Client data (login credentials, campsite/review info) is fed to <b>Express</b> routes which is then encrypted and stored using <b>MongoDB</b>.</p>
+                        <img src="./assets/campies-pic.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="content-section certifications">
+            <div class="content-section cert">
                 <h1>certifications</h1>
-                <div class="certifications-courses">
-                    <div class="fso">
-                        <h4>Full Stack Open</h4>
-                        <p>done through the university of helsinki</p>
-                        <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
-                    </div>
-                    <div class="wdbc">
-                        <h4>web developer bootcamp</h4>
-                        <p>online udemy course</p>
-                        <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
-                    </div>
+                <div class="cert-content">
+                        <div class="cert-card fso">
+                            <img src="./assets/helsinki.png" alt="" class="cert-img">
+                            <h4>Full Stack Open</h4>
+                            <p>done through the university of helsinki</p>
+                            <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
+                        </div>
+                        <div class="cert-card">
+                            <img src="./assets/udemy.png" alt="" class="cert-img">
+                            <h4>web developer bootcamp</h4>
+                            <p>online udemy course</p>
+                            <p>Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.</p>
+                        </div>
                 </div>
             </div>
             <div class="content-section story">
                 <h1>story</h1>
-                <p>After dropping out of...</p>
+                <p><b>7 years ago</b> I dropped out of University after my first year of studying History.</p>
+                <p>For a while I spent my days working as a letter carrier for Canada Post, but one day I followed up on a long time dream: "<b>learning to code</b>".</p>
+                <p>After following a few beginner tutorials, I got my footing and started rushing through my shifts so I could keep pursuing my new passion.</p> 
+                <p>Even though I loved my job, I just couldn't shake the idea of pursuing a career as a full-time software developer.</p>
+                <p>I transitioned to workinging part-time and re-enrolled in school. I hoped I would one day graduate from the University of Victoria with a Bachelors in Computer Science.</p>
+                <p>I have now targeting <b>graduation</b> in <b>May of 2025</b>!</p>
             </div>
             <div class="content-section hobbies">
                 <h1>hobbies</h1>
@@ -115,11 +132,12 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odit soluta! Esse voluptatibus iure qui, provident facere illo sequi in placeat voluptates sunt modi impedit alias quasi sint. Doloremque, debitis!</p>
                 </div>
             </div>
-            <div class="content-section contact">
+            <!-- <div class="content-section contact">
                 <h1>Contact Info</h1>
                 <p>email: directbrendan@gmail.com</p>
                 <p>phone: 250-701-5417</p>
-            </div>
+                <button onclick="openMailApp()"> email</button>
+            </div> -->
             <div id="jump-to-top" class="jump-to-top">
                 <img src="./assets/arrow-up.svg" alt="">
             </div>

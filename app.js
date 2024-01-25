@@ -35,7 +35,7 @@ const addNavLinks = ()=> {
   const certifications = document.querySelectorAll('.certifications-btn')
   const certificationsArr = Array.from(certifications)
   certificationsArr.map(btn => btn.addEventListener('click', ()=> {
-    jumpToClass('certifications')
+    jumpToClass('cert')
   }))
 
   const contact = document.querySelectorAll('.contact-btn')
@@ -46,14 +46,20 @@ const addNavLinks = ()=> {
 
   //in text jumps
 
-  const webApps = document.querySelector('.web-apps');
-  webApps.addEventListener('click', ()=> {
+  const js = document.querySelector('.js');
+  js.addEventListener('click', ()=> {
     jumpToClass('campies')
   })
-  const buildingGames = document.querySelector('.building-games');
-  buildingGames.addEventListener('click', ()=> {
+  const cpp = document.querySelector('.cpp');
+  cpp.addEventListener('click', ()=> {
     jumpToClass('farm-time')
   })
+  const react = document.querySelector('.react');
+  react.addEventListener('click', ()=> {
+    jumpToClass('fso')
+  })
+
+
 
 }
 
@@ -80,6 +86,14 @@ var scrollToTopButton = document.querySelector('#jump-to-top');
 scrollToTopButton.addEventListener('click', function() {
   window.scrollTo({top: 0, behavior: 'smooth'})
 })
+
+function openMailApp() {
+  // Specify the recipient email address
+  let recipientEmail = 'directbrendan@gmail.com';
+
+  // Open the default email client with the specified recipient
+  window.location.href = 'mailto:' + recipientEmail;
+}
 
 
 addNavLinks()
